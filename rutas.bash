@@ -1,8 +1,7 @@
-#ruta para token
-https://api.pilotsolution.net/v1/users/auth.php?username=informatica5@grupoyc.com&password=Yude2026.
+# Referencia de endpoints; este archivo no debe ejecutarse como script.
+# Autenticación: utilizar autorizacion.bash y credenciales en variables de entorno.
+# No escribir nombres de usuario, contraseñas, tokens o cookies en archivos versionados.
 
-#ruta para datos maestros
-https://api.pilotsolution.net/v1/masters/read.php
-
-#ruta para prospectos
-https://api.pilotsolution.net/v1/prospects/read.php
+# POST https://api.pilotsolution.net/v1/users/auth.php
+# GET/POST según contrato: https://api.pilotsolution.net/v1/masters/read.php
+# POST según contrato: https://api.pilotsolution.net/v1/prospects/read.php

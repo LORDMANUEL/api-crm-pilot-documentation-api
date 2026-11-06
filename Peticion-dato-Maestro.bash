@@ -1,6 +1,5 @@
 curl --location --request GET 'https://api.pilotsolution.net/v1/masters/read.php' \
 --header 'content-type: application/json' \
---header 'Cookie: PHPSESSID=sidnnmj6jeqku800hu22juf5j1' \
 --data-raw ' {
 	"data": {
 		"master": "workshop_model"	
