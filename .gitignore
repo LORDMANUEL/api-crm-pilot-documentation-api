@@ -1,0 +1,24 @@
+# Local secrets and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*credentials*
+*secret*.json
+# Operational data
+*.db
+*.sqlite
+*.sqlite3
+*.log
+*.pid
+*.bak
+*.zip
+*.rar
+__pycache__/
+.venv/
+venv/
+node_modules/
+.DS_Store
