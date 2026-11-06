@@ -83,6 +83,20 @@ Revisiones recomendadas antes de cada PR:
 
 **Aviso:** las pruebas de middleware local reportadas previamente no equivalen a pruebas ejecutadas en este repositorio ni a certificación de integración productiva.
 
+
+## Especificaciones y auditoría V7.1
+
+La documentación siguiente distingue la implementación examinada de los requisitos futuros. **El código interno del middleware no se aloja en este repositorio público.**
+
+| Documento | Contenido |
+|---|---|
+| [PRD — Requisitos de producto](docs/PRD_INTEGRACION_PILOT_SAP.md) | Objetivos, usuarios, requisitos, alcance, criterios de aceptación y fases |
+| [TRD — Diseño técnico](docs/TRD_INTEGRACION_PILOT_SAP.md) | Arquitectura, contratos, persistencia, seguridad, pruebas y condiciones de salida |
+| [APP Flow](docs/APP_FLOW_INTEGRACION_PILOT_SAP.md) | Navegación, onboarding, snapshots, reservas y manejo de errores |
+| [Auditoría V7.1](docs/AUDITORIA_FUNCIONAL_V7_1.md) | Qué existe, qué se verificó localmente, deuda P0/P1 y límites de evidencia |
+
+**Resultado de auditoría local:** 27/27 pruebas aisladas aprobadas. No se ha verificado el comportamiento frente a Pilot, SAP o DMS productivos. La actualización de reserva inbound histórica está deprecada y retorna HTTP 410.
+
 ## Mantenimiento
 
 Abrir un PR para cambios en contratos, ejemplos o documentación y revisar implicaciones de seguridad. Evitar subir paquetes ZIP completos de middleware al repositorio público.
